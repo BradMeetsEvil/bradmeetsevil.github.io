@@ -14,6 +14,42 @@
 		<a href="#about">About</a>
 	</div>
 	
+	
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img src="\static\hand.jpg" style="width:100%">
+		<div class="text">Hand Image</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="\static\kneel.jpg" style="width:100%">
+		<div class="text">Kneeling</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="\static\neck.jpg" style="width:100%">
+		<div class="text">Arms Around Neck</div>
+	</div>
+
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	
  </head>
  <body>
  
@@ -21,5 +57,34 @@
  <p>
  We would love to share this memory with you all in August from the 18th to the 25th of 2019 at the Grand Bahia Principe Tulum Resort. The wedding ceremony will take place at 2pm on August 22, 2019. We would like to ask if everyone invited through this Facebook event could please RSVP as soon as possible through this Facebook event if you will be joining us in Mexico so we can start to get a headcount. There is a limit on total guests so we are not able to offer plus ones. We will also be hosting a reception in Thunder Bay on August 31st to provide an opportunity to celebrate the marriage with those we were unable to invite or were unable to attend the ceremony in Mexico (we will be sending out separate invitations for that reception at a later date). If you choose to come to Mexico and stay off resort, day pass purchases are available for the 22nd to come onto the resort for the ceremony. We will be using this event to post pertinent trip and wedding information so stay tuned! We hope to see you there on the beach 😎☀️ - Ali and Brad
  </p>
+ 
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
  </body>
 </html>
