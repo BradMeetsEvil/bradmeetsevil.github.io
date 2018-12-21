@@ -65,7 +65,7 @@ p {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin-top: 60px;
+  margin: auto;
 }
 
 /* Hide the images by default */
