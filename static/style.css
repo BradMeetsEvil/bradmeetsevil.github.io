@@ -30,7 +30,7 @@ p {
   border: 10px;
   padding: 0;
   overflow: hidden;
-  position: relative;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
