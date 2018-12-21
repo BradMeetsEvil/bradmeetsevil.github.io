@@ -176,6 +176,7 @@ p {
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #5f686d; 
 }
 
 /* Some left and right padding inside the container */
@@ -200,7 +201,7 @@ p {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #66c5ff;
   text-align: center;
   cursor: pointer;
   width: 100%;
