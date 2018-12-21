@@ -13,6 +13,16 @@ h1 {
 	color: white;
 
 }
+
+h2 {
+	font-family: Georgia, serif;
+	text-align: center;
+	text-decoration: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: white;
+
+}
 p {
 	font-family: Georgia, serif;
 	text-align: center;
@@ -196,6 +206,7 @@ p {
 }
 
 .button {
+  font-family: Georgia, serif;
   border: none;
   outline: 0;
   display: inline-block;
