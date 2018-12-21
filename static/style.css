@@ -62,8 +62,8 @@ p {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: center;
-  margin-top:50px
+  position: relative;
+  margin:10px
 }
 
 /* Hide the images by default */
