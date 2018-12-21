@@ -50,7 +50,6 @@ p {
   color: white;
 }
 
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -130,11 +129,10 @@ p {
 
 /* Fading animation */
 .fade {
-  -  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -145,26 +143,4 @@ p {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
 }
